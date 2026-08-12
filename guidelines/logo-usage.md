@@ -1,53 +1,85 @@
 # AFLUENCE — Logo Usage Guide
 
-## Versions
+Aplica al logo de **junio 2026**, el que vive en `assets/logos/`. Es el mismo que
+embarcan web-blueprint, afluence-excalidraw y afluence-miro.
 
-| Version | Contains | Use for |
-|---------|----------|---------|
-| **Primary** | Icon + Wordmark + Tagline | Headers de web, presentaciones, documentos formales |
-| **Compact** | Icon + Wordmark | Navegacion web, headers de email, espacios reducidos |
-| **Icon Only** | Sail Mark | Favicons, app icons, avatares, watermarks |
-| **Wordmark Only** | Texto "Afluence" | Cuando el icono ya esta presente, menciones en texto |
+**Nunca dibujes ni reconstruyas el logo.** La marca es un velero con dos velas y casco.
+Siempre usa un archivo de `assets/logos/`.
 
-## Color applications
+## Versiones
 
-| Variant | Use on | Files contain |
-|---------|--------|---------------|
-| **Black on White** (default) | Fondos blancos o claros | `*-black-on-white.*` |
-| **White on Black** (dark mode) | Fondos negros u oscuros | `*-white-on-black.*` |
-| **Gray** | Footers, marcas de agua, bajo contraste | `*-gray.*` |
+| Version | Contiene | Usar para |
+|---------|----------|-----------|
+| **Horizontal** | Velero + wordmark "Afluence" | Headers web, presentaciones, documentos, firmas, ads |
+| **Symbol** | Solo el velero | Favicons, app icons, avatares, watermarks, perfiles sociales |
 
-## Minimum sizes
+No existe una version "solo wordmark" ni una version con tagline embebido. Si necesitas
+"Building your empire" como texto, tipografialo aparte en Archivo Medium (500),
+letter-spacing 1.1.
+
+## Variantes de color
+
+| Variante | Fondo | Archivos |
+|----------|-------|----------|
+| **Dark** | Claro (blanco, Steel) | `*-dark-transparent.*` — fondo transparente |
+| **White** | Oscuro (Obsidian, Abyss) | `*-white-transparent.*` — fondo transparente |
+| **On-White** | — | Raster con fondo blanco horneado |
+| **On-Black** | — | Raster con fondo negro horneado |
+
+Prioriza siempre las transparentes (`Dark` / `White`). `On-White` y `On-Black` son solo
+para contextos que no soportan transparencia.
+
+## Formatos disponibles
+
+| Formato | Donde | Usar para |
+|---------|-------|-----------|
+| SVG | `Dark/`, `White/` | Web, cualquier cosa que escale |
+| PDF | `Dark/`, `White/` | Print, handoff a diseno |
+| PNG | todas las variantes | Ads, social, docs, email |
+| JPG | `On-White/`, `On-Black/` | Solo donde PNG no sirva |
+
+Tamanos PNG: Horizontal en 512 / 1024 / 2048px. Symbol en 16 / 32 / 48 / 64 / 128 /
+256 / 512 / 1024px — el rango bajo existe especificamente para favicons.
+
+## Colores dentro de la marca
+
+| Elemento | HEX |
+|----------|-----|
+| Velas | `#000000` sobre claro, `#FFFFFF` sobre oscuro |
+| Casco | `#959899` |
+
+`#959899` es el gris oficial del casco. No lo sustituyas por Slate (`#404040`) ni por
+ningun otro gris.
+
+## Tamanos minimos
 
 | Version | Digital | Print |
 |---------|---------|-------|
-| Primary | 200px ancho | 50mm |
-| Compact | 150px ancho | 40mm |
-| Icon Only | 32px | 10mm |
-| Wordmark Only | 120px ancho | 30mm |
+| Horizontal | 150px ancho | 40mm |
+| Symbol | 16px (favicon), 32px en cualquier otro contexto | 10mm |
 
 ## Clear space
 
-- Primary/Compact: Espacio minimo = altura de la letra "A" del wordmark en cada direccion
-- Icon Only: 25% del ancho del icono en cada direccion
+- Horizontal: espacio minimo = altura de la letra "A" del wordmark en cada direccion
+- Symbol: 25% del ancho del simbolo en cada direccion
 
-## Permitted backgrounds
+## Fondos permitidos
 
-- Fondo blanco (#FFFFFF) → usar black-on-white
-- Fondo negro (#000000) → usar white-on-black
-- Fondo Abyss (#0A0A0A) → usar white-on-black
-- Fondo Steel (#E5E7EB) → usar black-on-white
-- Foto oscura con contraste suficiente → usar white-on-black
+- Blanco (`#FFFFFF`) → Dark
+- Negro (`#000000`) → White
+- Abyss (`#0A0A0A`) → White
+- Steel (`#E5E7EB`) → Dark
+- Foto oscura con contraste suficiente → White
 
 ## 10 DON'Ts
 
-1. No rotar el logo
-2. No estirar ni distorsionar
-3. No cambiar los colores fuera de las 3 variantes
-4. No agregar efectos (sombras, brillos, 3D, outlines)
-5. No colocar sobre fondos de color (solo negro, blanco, Abyss, Steel)
-6. No modificar la tipografia del wordmark
-7. No separar icono de wordmark en version primary
+1. No dibujar ni reconstruir el logo a mano — siempre usar el archivo
+2. No rotar el logo
+3. No estirar ni distorsionar
+4. No cambiar los colores fuera de las variantes definidas
+5. No agregar efectos (sombras, brillos, 3D, outlines)
+6. No colocar sobre fondos de color (solo negro, blanco, Abyss, Steel)
+7. No modificar la tipografia del wordmark
 8. No agregar elementos al logo (bordes, contenedores, badges)
 9. No reducir por debajo del tamano minimo
-10. No usar black-on-white sobre fondos oscuros (y viceversa)
+10. No usar la variante Dark sobre fondos oscuros (y viceversa)

@@ -14,9 +14,9 @@
 
 | Element | HEX | Usage |
 |---------|------|-------|
-| Hull (semi-elipse) | `#767676` | Icono del logo — version black-on-white |
-| Hull (dark mode) | `#E5E7EB` | Icono del logo — version white-on-black |
-| Tagline | `#5C5C5C` | Texto "Building your empire" |
+| Casco del velero | `#959899` | Igual en ambas variantes del logo |
+| Velas | `#000000` / `#FFFFFF` | Negro sobre fondo claro, blanco sobre fondo oscuro |
+| Tagline | `#5C5C5C` / `#808080` | Texto "Building your empire" — claro / oscuro |
 
 ## Usage rules
 

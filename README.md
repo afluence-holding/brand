@@ -42,19 +42,19 @@ Codex, Gemini and Claude are pointed here from their global instruction files.
 
 ## Known gaps
 
-Carried over from the imported material — not yet resolved:
-
-1. **`SKILL.md` embeds the old March logo.** The inline SVG is the superseded
-   polygon+arc mark, not the June artwork in `assets/logos/`.
-2. **`guidelines/logo-usage.md` documents the old lockup system**
-   (Primary / Compact / Icon-Only / Wordmark-Only, black-on-white / white-on-black / gray).
-   The June set uses Horizontal / Symbol with Dark / White / On-Black / On-White.
-3. **`#959899` is undocumented.** The June mark uses it for the sail element; it appears
-   in neither `SKILL.md` nor `guidelines/palette.md`. Either adopt it as a token or
-   normalize the SVGs to `#767676`.
-4. **Two font weights referenced but not vendored.** `SKILL.md` imports Sora 400 and
+1. **Two font weights referenced but not vendored.** `SKILL.md` imports Sora 400 and
    Archivo 700; `assets/fonts/` has neither. Fine over the Google Fonts CDN, a problem
    for offline, print and video work.
+
+### Resolved
+
+- ~~`SKILL.md` embedded a hand-drawn approximation of the logo~~ — the fake polygon+arc
+  inline SVG is gone. `SKILL.md` now forbids drawing the logo and points at
+  `assets/logos/` files only.
+- ~~`guidelines/logo-usage.md` documented the old lockup system~~ — rewritten for
+  Horizontal / Symbol with Dark / White / On-Black / On-White.
+- ~~`#959899` undocumented~~ — adopted as the official hull color. `--af-hull` was
+  `#767676` (the old mark); now `#959899`, matching what every product ships.
 
 ## Provenance
 

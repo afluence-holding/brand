@@ -29,7 +29,7 @@ This is the shared foundation for all Afluence creative skills. Each specialized
 | `--af-slate` | `#404040` | Secondary text, borders |
 | `--af-steel` | `#E5E7EB` | Light backgrounds, dividers |
 | `--af-white` | `#FFFFFF` | Text on dark, light backgrounds |
-| `--af-hull` | `#767676` | Logo hull only |
+| `--af-hull` | `#959899` | Logo hull only |
 | `--af-tagline` | `#5C5C5C` | Logo tagline only |
 
 NO accent color. No blues, greens, reds. Monochromatic only.
@@ -45,7 +45,7 @@ NO accent color. No blues, greens, reds. Monochromatic only.
   --af-slate: #404040;
   --af-steel: #E5E7EB;
   --af-white: #FFFFFF;
-  --af-hull: #767676;
+  --af-hull: #959899;
   --af-tagline: #5C5C5C;
   --af-font-heading: 'Sora', sans-serif;
   --af-font-body: 'Archivo', sans-serif;
@@ -148,27 +148,50 @@ These signature phrases are TONE REFERENCES, not templates. They demonstrate the
 
 ---
 
-## Logo SVG
+## Logo
 
-**Primary (black on white):**
-```svg
-<svg viewBox="0 0 220 68" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="42,2 42.5,44 8,44" fill="#000000"/>
-  <path d="M4.5,47.5 A23.5,28.5 0 0,0 49,47.5" fill="#767676"/>
-  <text x="58" y="43.5" font-family="'Sora',sans-serif" font-size="29" font-weight="600" fill="#000000">Afluence</text>
-  <text x="58" y="58.5" font-family="'Archivo',sans-serif" font-size="12" font-weight="500" fill="#5C5C5C" letter-spacing="1.1">Building your empire</text>
-</svg>
-```
+**NEVER draw, redraw, approximate, or reconstruct the logo. Always use a file from
+`assets/logos/`.** The mark is a sailboat with two sails and a hull — it cannot be
+built from primitives. Any `<polygon>` or `<path>` you write yourself is wrong.
 
-**Dark mode (white on black):**
-```svg
-<svg viewBox="0 0 220 68" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="42,2 42.5,44 8,44" fill="#E5E7EB"/>
-  <path d="M4.5,47.5 A23.5,28.5 0 0,0 49,47.5" fill="#808080"/>
-  <text x="58" y="43.5" font-family="'Sora',sans-serif" font-size="29" font-weight="600" fill="#FFFFFF">Afluence</text>
-  <text x="58" y="58.5" font-family="'Archivo',sans-serif" font-size="12" font-weight="500" fill="#808080" letter-spacing="1.1">Building your empire</text>
-</svg>
-```
+Use the file directly: reference it, copy it into the project, or inline the file's
+contents verbatim. Never type SVG geometry for the logo by hand.
+
+### Which file
+
+All paths relative to this skill's directory.
+
+| Need | Path |
+|---|---|
+| Lockup on dark background | `assets/logos/Horizontal/White/afluence-horizontal-white-transparent.svg` |
+| Lockup on light background | `assets/logos/Horizontal/Dark/afluence-horizontal-dark-transparent.svg` |
+| Mark only on dark | `assets/logos/Symbol/White/afluence-symbol-white-transparent.svg` |
+| Mark only on light | `assets/logos/Symbol/Dark/afluence-symbol-dark-transparent.svg` |
+| Favicon / app icon | `assets/logos/Symbol/{Dark,White}/*-{16,32,48,64,128}px.png` |
+| Raster for ads/social | `assets/logos/{Horizontal,Symbol}/{Dark,White}/*-{512,1024,2048}px.png` |
+| Print / vector handoff | any `*.pdf` in the folders above |
+
+`Dark` and `White` are transparent-background variants — `Dark` is the dark-inked mark
+for light surfaces, `White` is the white mark for dark surfaces. `On-Black` / `On-White`
+are raster exports with the background baked in; use those only where transparency is
+not supported.
+
+### Colors inside the mark
+
+| Element | HEX |
+|---|---|
+| Sails | `#000000` on light surfaces, `#FFFFFF` on dark |
+| Hull | `#959899` |
+
+`#959899` is the official hull color of the June 2026 mark and ships in every product
+that uses it. Do not substitute Slate (`#404040`) or any other grey.
+
+### Wordmark
+
+The wordmark is set in **Sora SemiBold (600)**. The tagline "Building your empire" is
+**Archivo Medium (500)**, letter-spacing 1.1, in `#5C5C5C` on light or `#808080` on dark.
+The horizontal lockup files already contain both — do not typeset them separately unless
+you specifically need a text-only treatment.
 
 ---
 
