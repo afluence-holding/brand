@@ -37,7 +37,7 @@ NO accent color. No blues, greens, reds. Monochromatic only.
 ### CSS Variables
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Archivo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Archivo:wght@400;500;600&display=swap');
 
 :root {
   --af-obsidian: #000000;
@@ -71,6 +71,10 @@ NO accent color. No blues, greens, reds. Monochromatic only.
 | Bold body | Archivo | 600 | |
 | Caption | Archivo | 400 | color Slate |
 | Code/Data | Sora | 400 | geometric feel |
+
+Archivo is used at 400/500/600 only — there is no Archivo Bold in this system. Sora
+carries all heavy weights. `assets/fonts/` vendors every weight above for offline,
+print and video work; the `@import` above covers web.
 
 ### Components
 

@@ -42,11 +42,14 @@ Codex, Gemini and Claude are pointed here from their global instruction files.
 
 ## Known gaps
 
-1. **Two font weights referenced but not vendored.** `SKILL.md` imports Sora 400 and
-   Archivo 700; `assets/fonts/` has neither. Fine over the Google Fonts CDN, a problem
-   for offline, print and video work.
+None outstanding.
 
 ### Resolved
+
+- ~~Sora 400 referenced but not vendored~~ — added. Instanced from the upstream
+  `Sora[wght].ttf` variable font at `wght=400`, same v2.000 as the other weights.
+- ~~Archivo 700 imported but never used~~ — removed from the `@import`. Archivo runs
+  400/500/600 only; Sora carries all heavy weights.
 
 - ~~`SKILL.md` embedded a hand-drawn approximation of the logo~~ — the fake polygon+arc
   inline SVG is gone. `SKILL.md` now forbids drawing the logo and points at
